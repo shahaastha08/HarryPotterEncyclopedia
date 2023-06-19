@@ -1,15 +1,4 @@
 # Project 4
-- **Assigned: Friday March 17**
-- **Task 1 Due: Friday March 24, 11:59pm**
-- **Task 2 Due: Friday April 7, 11:59pm**
-
-Assigned by Joe Mertz  
-Please direct questions to Piazza, to a TA, or to Joe.
-
-**Three status notes:**
- - Like the other projects, you must do this project alone. 
- - The updated information on how to deploy Task 2 to the cloud and how to submit Task 2 for grading has been added below.
-  - The images have been re-labled to reflect using GitHub Codespaces.
 
 ## Project Topics: Mobile to Cloud application
 
@@ -46,15 +35,6 @@ d. A short description (1-3 sentences) of what your mobile application will do w
 e. A screenshot of the console output from section 1b.  
 f. A screenshot of the console output from section 2c.
 
-**4.	Submit your document (only) to Canvas as a pdf by the Task 1 deadline.**  
-Do not submit your code. It will be integrated into Task 2.
-
-**Grading:**  
-- Task 1 complete and submitted on time: Bonus 5 points
-- Task 2 does not use the API demonstrated in Task 1:  Penalty 10 points
-
-*(Small print to head off lots of questions on Piazza:  If you don’t submit Task 1 on time, you get no bonus points.  If you have not committed to an API by submitting Task 1 by the deadline, you can’t be penalized for not using that API.  If you do not use the API submitted in Task 1 on time, you still get the 5 bonus points, but are penalized 10 points, resulting in a net penalty of 5 points. Grace days cannot be used for Task 1.  Grace days, if you have some remaining, can be used for Tasks 2. No purchase necessary. Limit one winner per household. Offer void in NJ, TX, and [Jaynestown](https://en.wikipedia.org/wiki/Jaynestown)).*
-
 ## Task 2: Distributed Application and Dashboard
 ### The Distributed Application
 
@@ -63,33 +43,7 @@ Your application must be of your own creative design. (We will use software simi
 The following is a diagram of the components for your this part of your application:
 ![Task 2 Diagram](docs/Project4-Diagram-Partial.png)
 
-Your web service should be deployed to the cloud and provide a simple RESTful API similar to those you have developed in prior projects. You do NOT have to implement all HTTP methods, only those that make sense for your application. Your web service must fetch information from some 3rd party API.  In Project 1 you experimented with screen scraping, therefore that is not allowed in this project.  Rather, you must find an API that provides data via XML or JSON.  It is easy and can be fun to search for APIs; the [GitHub Public APIs repository](https://github.com/public-apis/public-apis) is a good place to start.
-
-**Use APIs that require authentication with caution.** Many APIs will require you get a key (e.g. Flickr, which you used in the Android lab, required an API key).  This is ok. But APIs that require authentication via OAuth or other schemes add a lot of work. Experiment ahead of time, but if you are brave, go ahead…
-
-**Be sure your API is from a reputable source.  Your API still needs to be available when the TAs go to grade your project.** Make sure you do not base your project on an API built by a 7th grade student…
-
-**Banned APIs:** There are a number of APIs that have been used too often and are no longer interesting in this class.  Therefore, you **cannot** use any of the following:
-- Agify.io
-- Alpha Vantage
-- Dog.ceo
-- Eventful
-- Flickr (for we have already done that)
-- Google Maps (unless you also use a 2nd API to get info to put on the map)
-- IsEvenAPI.xyz
-- Last.fm
-- Merriam-Webster Dictionary
-- NASA Astronomy Picture of the Day
--	NYTimes APIs: specifically top stories, news wires, popular, and books.
--	OpenMovieDatabase
-- Pokemon API
-- Spoonacular
-- Spotify
-- Any weather API
--	Yahoo Finance API
--	Yelp
-- YouTube
-- Zomato
+Your web service should be deployed to the cloud and provide a simple RESTful API similar to those you have developed in prior projects. You do NOT have to implement all HTTP methods, only those that make sense for your application. Your web service must fetch information from some 3rd party API.
 
 Users will access your application via a native Android application. **You do not need to have a browser-based interface for your application** (only for the Dashboard). The Android application should communicate with your web service deployed to the cloud. Your web service is where the business logic for your application should be implemented (including fetching information from the 3rd party API).
 
@@ -186,50 +140,7 @@ g. Copy the URL and paste into an Incognito Chrome window to confirm that the He
 
 h. To deploy your own web service, create a ROOT.war like you did in Lab 3, upload or push the ROOT.war to your repository, and create a Codespace as has just been described.
 
-### Writeup
-
-Because each student's distributed application will be different, you are responsible for making it clear to the TAs how you have met these requirements, and it is in your best interest to do so. You will lose points if you don't make it clear how you have met the requirements. Therefore, you must create a document describing how you have met each of the requirements (1 – 7) above (you do **not** need to document _3. Handle error conditions_.) Your writeup will guide the TAs in grading your application.  See the provided example ([Project4Task1Writeup.pdf](https://github.com/CMU-Heinz-95702/Project4/blob/master/docs/Project4-WriteUp.pdf)) for the content and style of this document.
-
-Alternatively, instead of a document, you may submit a narrated screencast that includes the same information that would be in the writeup.
-
-### Demos
-The TAs will identify exemplar projects that are unique in some way and nominate them to be demonstrated in class.  Those who do so get a small prize!
-
-### Questions
-If you have a question, please post them to the course Piazza, ask a TA, or direct to Joe.
-
-### Submission Summary
-
-When you are done, you will have one web service, one Android app, and one writeup pdf document.
-
-Be sure you meet the Documentation standards given in the first week of class, especially including an Author comment with your name and AndrewID in each source code file. Failing to include your name and AndrewID in each source file will result in losing 5 points.
-
-All the following files should be left in your Github assignment repository.
-
-a. ROOT.war - This is your working web service.  
-b. Your IntelliJ IDEA project zip file.  Create this by using “File->Export To Zip File…”. You must export in this way and NOT just zip the project folders.  Your zip file should be clearly named to indicate this is your web service.  
-c. Your Android Studio project folder as a single zip file.  Your zip file should be clearly named to indicate this is your android app.  
-d. Your writeup document as a .pdf.  This file should be clearly named to indicate it is your writeup file.
-
-**You should only push / upload your writeup file as the very last step of submitting your project.  Once a TA sees that you have a writeup file, they will consider your project submitted and available for grading.**
-
-You do **not** have to submit anything to Canvas for Project 4 Task 2.
-
----
-### MongoDB
-The main MongoDB web site is https://www.mongodb.com. The site provides documentation, a [downloadable version of the database manager application](https://www.mongodb.com/try/download/enterprise) (*mongod*) that you can run on your laptop, and MongoDB drivers for many languages, including Java.
-
-*Mongod* is the MongoDB database server. It listens by default on port 27017. Requests and responses with the database are made via a MongoDB protocol.
-
-*Mongo* (without the DB) is a command line shell application for interacting with a MongoDB database.  It is useful for doing simple operations on the database such as finding all the current contents or deleting them.
-
-Because your web service will be running in the cloud, you can’t run your database on your laptop.  Rather, you should use a MongoDB-as-a-Service to host your database in the cloud. Atlas (https://www.mongodb.com/atlas/database) is required because it has a free level of service that is adequate for your project.  
-
-**Please read carefully…**
-This project will challenge you to do a lot of research to understand enough MongoDB to create a simple database, add a collection, and insert, update, and find documents in that collection.  This is very much like you will need to do regularly in industry. Code examples are provided on the MongoDB site, and elsewhere. **As long as you include comments as to their source, you can use them in your code.**  If we search for a snippet of your code find it somewhere, and you have not attributed it to where you found it, that will be cheating and reason for receiving a failing grade in the course.  Of course, the bulk of your code that is unique to your application should be your own and not copied from anywhere.
-
-#### Setting up MongoDB Atlas
-In this project, you are going to us nosql-database-as-a-service with MongoDB Atlas. Information about MongoDB can be found here: https://www.mongodb.com/what-is-mongodb
+**MongoDB**
 
 Getting started:
 1. Create your account. Go to https://www.mongodb.com/atlas/database and create your own free account.
